@@ -1,0 +1,2 @@
+module JosProductsHelper
+end

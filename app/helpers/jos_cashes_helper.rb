@@ -1,0 +1,2 @@
+module JosCashesHelper
+end

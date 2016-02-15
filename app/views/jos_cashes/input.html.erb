@@ -1,0 +1,32 @@
+
+        <div style='margin:10px 0px;'> </div>
+
+        <form action="push_cash">            
+            <div class="ccms_form_element cfdiv_text" id="amount_container_div" style="">
+                <label for="amount">Cash amount</label>
+                <input id="amount" maxlength="150" size="30" class="" title="amount" type="text" value="" name="amount" />
+                <div id="error-message-amount" style="display: inline;"><?php if($help_is_on) echo $help_msg_input_and_ENTER;?></div>
+            </div>
+
+            <div class="ccms_form_element cfdiv_select" id="inout_container_div" style="">
+                <label for="inout">IN or OUT</label>
+                <select size="1" id="in_out" class="" title="" name="in_out">
+                    <option value="" selected>Select one</option>                    
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>                    
+                </select>
+                <div id="error-message-inout" style="display: inline;"><?php if($help_is_on) echo $help_msg_select;?></div>
+            </div>            
+
+            <div class="ccms_form_element cfdiv_textarea" id="description_container_div" style="">
+                <label for="description">Description</label>
+                <textarea id="description" cols="27" rows="5" class="" title="description" name="description">Some description</textarea>
+                <div id="error-message-description"></div>
+            </div>
+            
+            <div class="ccms_form_element cfdiv_submit" id="submit_container_div" style="text-align:left">
+                <input name="submit" id="submit" class="" value="Submit" type="button" />
+                <div id="error-message-submit" style="display: inline;"><?php if($help_is_on) echo $help_msg_submit;?></div>
+            </div>
+        </form>
+    

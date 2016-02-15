@@ -1,0 +1,38 @@
+<h1>JosProducts#index</h1>
+<p>Find me in app/views/jos_products/index.html.erb</p>
+<%=form_for @product,:url=>{:action=>'push_product'} do |product|%>
+<%= product.label :code %>
+<%= product.text_field :code %><br>
+<%= product.label :branch %>
+<%= product.text_field :branch %><br>
+  
+  <%=product.label :category_id %><br>
+  <%= product.text_field :category_id %><br>
+<%= product.label :model %>
+   <%= product.text_field :model%><br>
+   
+   <%= product.label :purchase_price %>
+  <%= product.number_field :purchase_price %><br>
+   
+  
+  <%= product.label :code_price %>
+  <%= product.number_field :code_price %><br>
+  <%= product.label :quantity %>
+  <%= product.number_field :quantity %><br>
+  <%= product.label :tags %>
+  <%= product.text_field :tags %><br>
+  
+  <%= product.label :memo %>
+   <%= product.number_field :memo %><br>
+  
+  <%= product.label :first_pin %>
+   <%= product.number_field :first_pin %><br>
+   <%= product.label :last_pin %>
+   <%= product.number_field :last_pin %><br>
+ 
+  
+
+<%= product.submit %>
+  
+<%end%>
+  

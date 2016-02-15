@@ -1,0 +1,18 @@
+<div style="color:blue;"><h1>JosCashes#index</h1></div>
+<div style="color:yellowgreen;"><p>Find me in app/views/jos_cashes/index.html.erb</p></div>
+<div style="color:red;"><%=ApplicationHelper.print %>//call from application helper</div>
+<div style="color:blue;"><%= total_cash_count%><br></div>
+
+
+
+<div style="color:green;">last amount:<%= last_cash_amount%></div><br>
+
+
+<%=last_id%>//callfrom application controller 
+<%@id = last_id%><br>// here return of last-id is assigned to id
+<div style="color:goldenrod;">last id is :
+<%=@id - 1%>//last id -1/<br>
+<%=@cash1%><br>// the call in index defined in lib folder under task  need to require in controlller</div>
+<div style="color:magenta"><%=@time%> //from module defined in app controller in called in josh-cash controller</div>
+<%=@time%>
+<!--you can not call module here-->
